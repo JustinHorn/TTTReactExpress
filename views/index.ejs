@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>DayPlanner</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/bg-masthead.jpg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160611996-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160611996-1');
+    </script>
+</head>
+
+
+<body id="page-top" style="background:black;">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">DayPlanner</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#why">Why</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#use">Use</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#logic">Logic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center position-absolute" style="position:absolute;right:40%;left:40%;bottom:0;">
+             <a href="#download" class="btn btn-primary js-scroll-trigger">Download for Windows</a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4" id="why">Why use DayPlanner for planning?</h2>
+                <ul class="text-white mb-4 text-left">
+                    <li>plan your day by simply typing in what you want to do</li>
+                    <li>save and reuse routines</li>
+                    <li>change duration easily</li>
+                    <li>calculates start and end for you</li>
+                    <li>insert activities you first forgot about easily</li>
+                    <li>navigate from one day to the next easily</li>
+                    <li>remove entries easily</li>
+                </ul>
+            </div>
+        </div>
+        <img src="img/Logo 1.jpg" class="img-fluid" alt="">
+
+    </div>
+<!-- Projects Section -->
+    <div class="container">
+        <h2 class="text-white mb-4"><u>What?!</u></h2>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/57zoOpc6abQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            <h1></h1>
+        <h2 class="text-white mb-4" id="use"><u>How to use!</u></h2>
+        <h4 class="text-left text-white mb-4">Hotkeys</h4>
+        <table class="table text-white mb-4">
+            <thead>
+            <tr>
+                <th scope="col">str +</th>
+                <th scope="col">meaning</th>
+                <th scope="col">what it does</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">enter</th>
+                <td>enter</td>
+                <td>start next line with end time of old entry</td>
+            </tr>
+            <tr>
+                <th scope="row">n</th>
+                <td>next</td>
+                <td>increments time in small textiput</td>
+            </tr>
+            <tr>
+                <th scope="row">p</th>
+                <td>previous</td>
+                <td>decrement time in small textinput</td>
+            </tr>
+            <tr>
+                <th scope="row">s</th>
+                <td>save</td>
+                <td>saves current Template(routine) or Plan</td>
+            </tr>
+            <tr>
+                <th scope="row">l</th>
+                <td>load</td>
+                <td>loads plan (name of plan = text in small textinput)</td>
+            </tr>
+            <tr>
+                <th scope="row">alt-gr</th>
+                <td>make routine</td>
+                <td>switches to routine mode with marked text</td>
+            </tr>
+            <tr>
+                <th scope="row">#</th>
+                <td>updateText</td>
+                <td>writes plan content to textinputs</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">any key</th>
+                <td>updatePlan</td>
+                <td>updates plan content by textiputs(gets called everytime you type)</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2 class="text-white mb-4" id="logic"><u>How it works </u></h2>
+        <blockquote class="text-left  text-white mb-4">The text that you enter is broken in to lines. Those lines are filtered acording to the following format:</blockquote>
+        <p class="text-white mb-4">
+            ^\d\d:\d\d activity1 <br>
+            ^\d\d:\d\d activity2</p>
+        <blockquote class="text-left text-white mb-4">Lines that follow this format are entries. <br>
+            \d\d:\d\d is the start time of the activity. <br>
+            The end time of activity1 is the start time of activity2. <br>
+            You can add a #comment... and another \d\d:\d\d to the end of an entry. <br>
+            The comment will be ignored when comparing entries. <br>
+            It is used to make comments without the programm forgetting the structure to the right. <br>
+            \d\d:\d\d at the end tells the program the duration of the activity eg. the length of the entry.</blockquote>
+        <h4 class="text-left text-white mb-4">Plan mode and Routine mode</h4>
+        <blockquote class="text-left text-white mb-4">
+            You start in plan mode. Pressing on the Button that says "P/R" switches to routine mode. <br>
+            <br>
+            In routine mode you can change old routines or make new ones. Routine entries are like plan entries except they have no start or end time they only have a duration.
+            <br>
+            <br>
+            \d\d:\d\d stands for duration in routine mode
+            <br>
+            <br>
+            To create a new routine change the theme in the small text input and save. <br>
+            To change a old routine click on it, change it and save. <br>
+            If there is a bugg when you swap to plan mode. Just save and restart the programm <br>
+        </blockquote>
+
+        <h2 class="text-white mb-4"> <u>Why I made it</u></h2>
+        <blockquote class="text-left text-white mb-4">
+            I used to plan my days using vs-code and .txt files. I had to type in the same things over and over again. I wanted to automize that. Hence this project
+        </blockquote>
+        <h2 class="text-white mb-4" id="download"> <u> Get windows download link via email!</u></h2>
+
+        <form action="/email" method="post">
+            <input class="mb-3 form-control" required type="email" name="email" placeholder="your@email.de">
+            <input class="text-white" name="agree" required type="checkbox">
+            <label class="text-white mb-4" for="scales">Hereby you agree to receiving emails about product updates</label>
+            <br>
+            <label class="text-white mb-4" for="scales">You can cancel these anytime by replying and stating that you dont want anymore emails</label>
+            <br>
+            <input class="btn btn-primary btn-xl"   type="submit" name="signup" value="Get link!"/>
+        </form>
+            <div class="social d-flex justify-content-center">
+                <a href="https://github.com/Murtag00" class="mx-2">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+</section>
+<!-- Footer -->
+<div class="container small text-center text-white-50">
+    Copyright &copy; dayplanner.online 2020
+</div>
+</section>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
+
+</body>
+</html>
