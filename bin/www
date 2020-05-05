@@ -8,6 +8,8 @@ var app = require("../app");
 var debug = require("debug")("ttt3:server");
 const https = require("https");
 const fs = require("fs");
+var dotenv = require("dotenv");
+dotenv.config();
 
 const options = {
   key: fs.readFileSync(process.env.SSL_DIR + "privkey.pem", "utf8"),
